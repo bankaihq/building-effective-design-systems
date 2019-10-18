@@ -1,6 +1,6 @@
 Hi, my name is Sanne Peters
 and I work at BANKAI
-as the Front-end Software Architect
+as a Front-end Software Architect
 
 At BANKAI Design Systems are one of our main tools for collaboration
 
