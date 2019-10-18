@@ -1,0 +1,9 @@
+{
+  "name": "building-effective-design-systems",
+  "version": "1.0.0",
+  "description": "A presentation on design systems",
+  "main": "index.js",
+  "author": "Sanne Peters <sanne@bankai.eu>",
+  "license": "NONE",
+  "private": true
+}
