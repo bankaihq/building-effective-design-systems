@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/bankai.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -28,49 +28,66 @@
 				<section data-markdown>
 					Hi, my name is __Sanne Peters__
 
-					and I work at BANKAI
+					and I work at __BANKAI__
 
-					as a Front-end Software Architect
+					as a __Front-end Software Architect__
 				</section>
 				<section data-markdown>
-					❤️ And I love Design Systems ❤️
+				We are a tiny Design Agency
 
-					Design Systems are one of our main tools for collaboration
+				that mostly works by __collaborating__
+
+				with others
 				</section>
 				<section data-markdown>
 					And we collaborate a lot
 
+					Notes:
 					- governments
 					- scientific institutes
-					- big data companies
-					- API developers
-					- freelancers
-					- tech companies
+					- data-management
+					- hardware manufactures
+					</aside>
 				</section>
 				<section data-markdown>
-					## Who uses Design Systems anyway?
+					And we love Design Systems ❤️
+
+					because they
+				
+					are __collaboration__ and __communication__ tools.
+				</section>
+				<section data-markdown>
+					## Who uses Design Systems?
 					- Designers
 					- Developers
+					- Product Owners
 					- Copy Writers
 					- Data Scientists
-					- Product Owners
 				</section>
 				<section data-markdown>
-					## So how do you build something that can be used by everyone?
-					- Working together, through __co-ownership__
-					- making it __accessible__ and __maintainable__
-					- Allow it to grow __safely__.
+					## So how do you build something
+					## that can be used by everyone?
+					1. Work together, through __co-ownership__
+					2. making it __accessible__ and __maintainable__
+					3. Allow it to __safely__ grow
 				</section>
 				<section data-markdown>
-					## Working together
+					## 1. Work together
 
-					In order for it to be effective the system needs to be owned together. The best way to achieve this is to work on it together.
+					In order for it to be effective the system needs to be 
+					owned __together__. The best way to achieve this is to work on it __together__.
 				</section>
 				<section data-markdown>
-					### Establishing a common language
+					### Establish a common language
+					
+					In order to understand each other you need to speak the same language
 
 					Everyone uses different terms for the same things
-					The whole team should use the same words for the same things
+
+					__The whole team__ should use the same terms
+					
+					Notes: everyone comes in from different backgrounds and therefore has different perspectives
+					Cooperation is not a 1 way street, it needs to come from both directions
 				</section>
 				<section data-markdown>
 					Involve each other in the decision making:
@@ -80,42 +97,57 @@
 					- Do you need this feature documented?
 				</section>
 				<section data-markdown>
+					### Sharing is caring
+				</section>
+				<section data-markdown>
 					Share what you know about the web. So Designers can make more informed decisions
-					- both what's possible and what's not.
+					- both on what's possible and what's not.
 					- propose to research something.
-					- talk about unknown web technologies (like Variable Fonts or Web Audio API)
+					- Prototype something...
+					- talk about obscure/new web technologies (like Variable Fonts or Web Audio API)
 				</section>
 				<section data-markdown>
 					**Don't force people** to do
 					what they **do not want** too.
 
-					Be forgiving
+					Be nice, be forgiving.
 				</section>
 				<section data-markdown>
-					## Step 2: ~making~ __keeping__ it accessible and maintainable
+					## 2. ~making~ __keeping__ it accessible and maintainable
 				</section>
 				<section data-markdown>
 					### Don't re-invent the wheel.
 
-					Make it your mantra.
-					
 					Use methods that are well thought out and established,
 					like:
 					
 					- for structured version control: [__git flow__](https://nvie.com/posts/a-successful-git-branching-model/) or [__github flow__](https://guides.github.com/introduction/flow/)
+					- add linting (like, eslint standard or AirBNB).
+					- do __code reviews__ through __Pull/Merge Request__
+					- set up integration testing and end-to-end testing
+					- automate the hell out of it! 
+					
+					Notes:
+					- for structured version control: [__git flow__](https://nvie.com/posts/a-successful-git-branching-model/) or [__github flow__](https://guides.github.com/introduction/flow/)
 					- add linting (like, eslint standard or AirBNB). Stop wasting time having tabs-vs-spaces discussions or wether or not something needs an extra comma behind it.
 					- do __code reviews__ through __Pull/Merge Request__
 					- set up integration testing and end-to-end testing
-					- automate as much as possible, allow yourself to think less and create room for some
-						✨ creativity ✨
-					
+					- automate the hell out of it! 
+
+					Make it your mantra.
 					(maybe later, tweak it to fit your needs.)
+				</section>
+				<section data-markdown>
+					Allow yourself to think less and create room for some...
+				</section>
+				<section data-markdown data-background-image="/images/creativity-duck-bananas.jpg">
+					### ✨ creativity ✨
 				</section>
 				<section data-markdown>
 					### Define a structure for the system
 				</section>
 				<section data-markdown>
-					## Design Tokens
+					## The most basic values
 
 					We use __Design Tokens__
 					to define the most __basic values__
@@ -124,37 +156,46 @@
 					lightning design system
 				</section>
 				<section data-markdown>
-					## organise components in a heirarchy.
+					## organise components in a hierarchy.
 
-					A hierarchy creates structure and adds a high level meaning to each component.
+					A hierarchy creates structure 
+					
+					and adds a high level meaning to each component.
+					
+					Notes:
 					needs rules,
 					without rules there is chaos.
 					[funny background pic]
 				</section>
 				<section data-markdown>
-					Take for example Atomic Design
+					# Atomic Design
 
-					App                 Village
-					Views (pages)       Neighbourhood
-					layout (templates)  Street-plan
-					Organisms           House
-					Molecules           Wall
-					Atoms               Brick
+					- App                ( __Village__ )
+					- Views (pages)      ( __Neighbourhoods__ )
+					- layout (templates) ( __Street-plans__ )
+					- Organisms          ( __Houses__)
+					- Molecules          ( __Walls__ )
+					- Atoms              ( __Bricks__ )
+
+					Notes: I've seen many people change them so lots of reasons.
+					Don't. That way you're effectively creating a new way of working.
+					If you keep it as it is it is easier to explain it.
 				</section>
 				<section data-markdown>
 					### Composing components, not building them
 
+					Notes:
 					You are not a mindless machine.
 					Or at least,
 					you shouldn't be.
-					
 					Thinking is like, good.
 				</section>
 				<section data-markdown>
 					Making components is a __creative process__.
 
-					> _yes, you're an artist now_
+					_yes, you're an artist now_
 
+					Notes:
 					> So next time when your parents ask you "so, what do you do again?"
 					> You say, "I am an artist, a digital artist"
 				</section>
@@ -166,45 +207,53 @@
 					- Ask question on how it should work?
 					- Are animations and transitions defined. If not, should they?
 
+					Notes:
 					Have a discussion about, using clear arguments and explain them.
 				</section>
 				<section data-markdown data-background-image="/images/lion-king-rafiki-naming-simba.jpg">
-					# name your child
-
-					> But naming things is hard 😨.
-					> -- 👩🏽‍💻 _every developer I've met_
+					# name your component
+				</section>
+				<section data-markdown="">
+						_But naming things is hard 😨._
+						
+						-- 👩🏽‍💻 _every developer I've met_	
 				</section>
 				<section data-markdown>
 						Some tricks:
 						- Define the name rather by __what they do__ than by __how they look__
 						- Use simple, every day words. (remember you work in a multi-disciplinary team)
-							- Accordeon --> expandable-list-layout
-							- Toast --> popup-notification
 						- Iterate on the name, just modify it as you compose it.
 						- Ask a co-worker!
 
-						style: https://vuejs.org/v2/style-guide/ & https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name
+						style: [Vue.js](https://vuejs.org/v2/style-guide/) & [WC3](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name)
+
+						Notes: - Accordeon --> expandable-list-layout
+						- Toast --> popup-notification
+					
 				</section>
 				<section data-markdown>
 						### Allow it to grow __safely__.
 				</section>
 				<section data-markdown>
 						Each thing should be documented
-						- design tokens
-						- components
-						- utilities
 						
 						The bigger a team gets the harder it is to communicate.
 						Document once and you will never need to explain it again.
 						
 						Documentation tools: styleguidist ([React](https://react-styleguidist.js.org/) or [Vue](https://vue-styleguidist.github.io/)) and [storybook](https://storybook.js.org/)
+
+						Notes:
+						- design tokens
+						- components
+						- utilities
+						
 				</section>
 				<section data-markdown>
 						Each functionality needs to be covered by tests
 
-						Start with manual testing scripts
-						translate those to code-based test
-						automate your tests (pre-commit or pre-merge hooks)
+						- Start with manual testing scripts
+						- translate those to code-based test
+						- automate your tests (pre-commit or pre-merge hooks)
 				</section>
 				<section data-markdown>
 						## So summarised:
@@ -215,6 +264,8 @@
 				<section data-markdown>
 						# A few final words
 
+						Notes:
+						Designs Systems exist to make life easier by making communication easier.
 						Leave/create room for creativity
 					</section>
 					<section data-markdown>
