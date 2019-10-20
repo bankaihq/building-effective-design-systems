@@ -1,0 +1,64 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../fonts/FFDIN.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #171717;
+$headingColor: #00b26b;
+
+$mainFontSize: 42px;
+$mainFont: 'FFDin', Helvetica, sans-serif;
+$headingFont: 'FFDin', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #00b26b;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	color: $backgroundColor;
+	background-color: $mainColor;
+	&, h1, h2, h3, h4, h5, h6 {
+		color: $headingColor;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal .slides section, .reveal .slides section > section {
+	word-spacing: 0.01em;
+	font-weight: 700;
+}
+
+.reveal section strong {
+	color: #00b26b;
+}
+
+.reveal .slides section {
+	text-align: left;
+}

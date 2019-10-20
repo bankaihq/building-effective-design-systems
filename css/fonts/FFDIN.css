@@ -1,0 +1,17 @@
+@font-face {
+	font-family: "FFDin";
+	src: url("../fonts/FFDinBold.woff2") format("woff2");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "FFDin";
+	src: url("../fonts/FFDinMedium.woff2") format("woff2");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "FFDin";
+	src: url("../fonts/FFDinRegular.woff2") format("woff2");
+	font-weight: normal;
+}
