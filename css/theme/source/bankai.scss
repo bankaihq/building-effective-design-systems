@@ -61,4 +61,25 @@ section.has-dark-background {
 
 .reveal .slides section {
 	text-align: left;
+
+	&[data-background-image-is-partial] {
+		background-position: right;
+		&::before {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			height: 100vh;
+			width: 100vw;
+			content: '';
+			background-image:
+				linear-gradient(
+					100deg,
+					#fff 0%,
+					#fff 70%,
+					rgba(0,0,0,1) 70.1%,
+					rgba(0,0,0,1) 100%
+				);
+		}
+	}
 }

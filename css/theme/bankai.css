@@ -284,3 +284,14 @@ body {
 
 .reveal .slides section {
   text-align: left; }
+  .reveal .slides section[data-background-image-is-partial] {
+    background-position: right; }
+    .reveal .slides section[data-background-image-is-partial]::before {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      height: 100vh;
+      width: 100vw;
+      content: '';
+      background-image: linear-gradient(100deg, #fff 0%, #fff 70%, black 70.1%, black 100%); }
