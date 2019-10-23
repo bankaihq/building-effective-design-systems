@@ -132,51 +132,38 @@
 				</section>
 				<section data-markdown>
 					Involve each other in the decision making:
-					- How do we name this component?
-					- Does this structure make sense?
+					- How do __we__ name this thing?
+					- Does its structure make sense?
 					- How should it work?
-					- Do you need this feature documented?
+					- Do __we__ need this feature documented?
 				</section>
 				<section data-markdown>
 					### Sharing is caring
+
+					Notes: By sharing you learn about each other and each other skills
 				</section>
 				<section data-markdown>
 					Share what you know about the web. So Designers can make more informed decisions
 					- both on what's possible and what's not.
 					- propose to research something.
 					- Prototype something...
-					- talk about obscure/new web technologies (like Variable Fonts or Web Audio API)
+					- talk about obscure/new web technologies
+
+					Notes:
+					webtech: like Variable Fonts or Web Audio API
 				</section>
 				<section data-markdown>
 					**Don't force people** to do
 					what they **do not want** too.
 
 					Be nice, be forgiving.
+
+					Notes:
+					Find the right way for collaboration for your team. 
+					Remember that this is always different for each member.
 				</section>
 				<section data-markdown>
 					## Part 2: Keep structure
-				</section>
-				<section data-markdown>
-					### Don't re-invent the wheel.
-
-					Use methods that are well thought out and established,
-					like:
-					
-					- for structured version control: [__git flow__](https://nvie.com/posts/a-successful-git-branching-model/) or [__github flow__](https://guides.github.com/introduction/flow/)
-					- add linting (like, eslint standard or AirBNB).
-					- do __code reviews__ through __Pull/Merge Request__
-					- set up integration testing and end-to-end testing
-					- automate the hell out of it! 
-					
-					Notes:
-					- for structured version control: [__git flow__](https://nvie.com/posts/a-successful-git-branching-model/) or [__github flow__](https://guides.github.com/introduction/flow/)
-					- add linting (like, eslint standard or AirBNB). Stop wasting time having tabs-vs-spaces discussions or wether or not something needs an extra comma behind it.
-					- do __code reviews__ through __Pull/Merge Request__
-					- set up integration testing and end-to-end testing
-					- automate the hell out of it! 
-
-					Make it your mantra.
-					(maybe later, tweak it to fit your needs.)
 				</section>
 				<section data-markdown>
 					Allow yourself to think less and create room for some...
@@ -197,30 +184,81 @@
 					lightning design system
 				</section>
 				<section data-markdown>
-					## organise components in a hierarchy.
+					## Organise components in a hierarchy.
 
-					A hierarchy creates structure 
-					
-					and adds a high level meaning to each component.
+					- A hierarchy creates structure 
+					- Adds context to each component.
 					
 					Notes:
 					needs rules,
 					without rules there is chaos.
 					[funny background pic]
+					(atomic design is next)
 				</section>
-				<section data-markdown>
-					# Atomic Design
+				<section>
+					<h2>Atomic Design</h2>
+					<p>by Brad Frost</p>
+					<ul>
+						<li>
+							App <span class="fragment" data-fragment-index="6">
+								(<strong>Village</strong>)
+							</span>
+						</li>
+						<li>
+							Views / pages
+							<span class="fragment" data-fragment-index="5">
+								(<strong>Neighbourhoods</strong>)
+							</span>
+						</li>
+						<li>
+							Layouts
+							<span class="fragment" data-fragment-index="4">
+								(<strong>Street-plans</strong>)
+							</span>
+							<span
+								class="fragment" data-fragment-index="10"
+							>🧩 Design System</span>
+						</li>
+						<li>
+							Organisms
+							<span class="fragment" data-fragment-index="3">
+								(<strong>Houses</strong>)
+							</span>
+							<span
+								class="fragment" data-fragment-index="10"
+							>🧩 Design System</span>
+						</li>
+						<li>
+							Molecules
+							<span class="fragment" data-fragment-index="2">
+								(<strong>Walls</strong>)
+							</span>
+							<span
+								class="fragment" data-fragment-index="10"
+							>🧩 Design System</span>
+						</li>
+						<li>
+							Atoms
+							<span class="fragment" data-fragment-index="1">
+								(<strong>Bricks</strong>)
+							</span>
+							<span
+								class="fragment" data-fragment-index="10"
+							>🧩 Design System</span>
+						</li>
+						<li class="fragment" data-fragment-index="7">
+							<i>Design Tokens</i>
+							<span
+								class="fragment" data-fragment-index="10"
+							>🧩 Design System</span>
+						</li>
+					</ul>
 
-					- App                ( __Village__ )
-					- Views (pages)      ( __Neighbourhoods__ )
-					- layout (templates) ( __Street-plans__ )
-					- Organisms          ( __Houses__)
-					- Molecules          ( __Walls__ )
-					- Atoms              ( __Bricks__ )
-
-					Notes: I've seen many people change them so lots of reasons.
-					Don't. That way you're effectively creating a new way of working.
-					If you keep it as it is it is easier to explain it.
+					<aside class="notes">
+						Notes: I've seen many people change them so lots of reasons.
+						Don't. That way you're effectively creating a new way of working.
+						If you keep it as it is it is easier to explain it.
+					</aside>
 				</section>
 				<section data-markdown>
 					### Composing components, not building them
@@ -232,16 +270,16 @@
 					Thinking is like, good.
 				</section>
 				<section data-markdown>
-					Making components is a __creative process__.
+					### Making components is a __creative process__.
 
-					_yes, you're an artist now_
+					Yes, you're an artist now. <!-- .element: class="fragment" -->
 
 					Notes:
 					> So next time when your parents ask you "so, what do you do again?"
 					> You say, "I am an artist, a digital artist"
 				</section>
 				<section data-markdown>
-					Composing components is done through __co-creation__
+					### Composing components is done through __collaboration__
 
 					- Discuss the design with the person who made it.
 					- Does it contain all the info you need?
@@ -255,9 +293,7 @@
 					# name your component
 				</section>
 				<section data-markdown="">
-						_But naming things is hard 😨._
-						
-						-- 👩🏽‍💻 _every developer I've met_	
+						"But naming things is hard 😨."
 				</section>
 				<section data-markdown>
 						Some tricks:
@@ -270,7 +306,6 @@
 
 						Notes: - Accordeon --> expandable-list-layout
 						- Toast --> popup-notification
-					
 				</section>
 				<section data-markdown>
 						## Part 3: Grow __safely__
@@ -295,6 +330,28 @@
 						- Start with manual testing scripts
 						- translate those to code-based test
 						- automate your tests (pre-commit or pre-merge hooks)
+				</section>
+				<section data-markdown>
+					### Don't re-invent the wheel.
+
+					Use methods that are well thought out and established,
+					like:
+					
+					- for structured version control: [__git flow__](https://nvie.com/posts/a-successful-git-branching-model/) or [__github flow__](https://guides.github.com/introduction/flow/)
+					- add linting (like, eslint standard or AirBNB).
+					- do __code reviews__ through __Pull/Merge Request__
+					- set up integration testing and end-to-end testing
+					- automate the hell out of it! 
+					
+					Notes:
+					- for structured version control: [__git flow__](https://nvie.com/posts/a-successful-git-branching-model/) or [__github flow__](https://guides.github.com/introduction/flow/)
+					- add linting (like, eslint standard or AirBNB). Stop wasting time having tabs-vs-spaces discussions or wether or not something needs an extra comma behind it.
+					- do __code reviews__ through __Pull/Merge Request__
+					- set up integration testing and end-to-end testing
+					- automate the hell out of it! 
+
+					Make it your mantra.
+					(maybe later, tweak it to fit your needs.)
 				</section>
 				<section data-markdown>
 						## So summarised:
