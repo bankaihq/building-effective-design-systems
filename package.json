@@ -8,7 +8,7 @@
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
-    "start": "grunt serve",
+    "dev": "grunt serve",
     "build": "grunt"
   },
   "repository": {
