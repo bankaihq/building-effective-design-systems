@@ -55,6 +55,11 @@ section.has-dark-background {
 	font-weight: 700;
 }
 
+.reveal section img {
+	border: 0 none;
+	box-shadow: none;
+}
+
 .reveal section strong {
 	color: #00b26b;
 }

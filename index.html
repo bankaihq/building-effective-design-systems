@@ -198,19 +198,53 @@
 				<section data-markdown>
 					## Defining names
 
-					[Colour variables example here]
+					Variables
+
+					consider:
+					```css
+					$primary-colour: #ff0000; /* this is red */
+					```
+					versus:
+
+					```css
+					$cta-colour: #ff0000; /* this is also red */
+					```
 				</section>
 				<section data-markdown>
 					## Defining names
 
-					Functions example here: () sortNames → sortAlphabetically
+					For UI components
+
+					![Three USP examples](/images/three-usp-component-examples.svg)
+
+					Notes:
+					- usp-block (NO)
+					- usp-summary (YES)
 				</section>
 				<section data-markdown>
 					## Defining names
 
-					[UI Component example]
-				</section>
-				<section data-markdown>
+					For Functions
+
+					```js
+					function sortNames (names) {
+						// in JS array sorting is done in place
+						// so copy them to a new array first
+						const sortedNames = names.map(name => name)
+						sortedNames.sort()
+						return sortedNames
+					}
+					```
+
+					```js
+					function sortAlphabetically (strings) {
+						// in JS array sorting is done in place
+						// so copy them to a new array first
+						const sortedStrings = strings.map(string => string)
+						sortedStrings.sort()
+						return sortedStrings
+					}
+					```
 				</section>
 				<section data-markdown>
 					# Practical Tips
