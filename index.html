@@ -29,6 +29,11 @@
 						# Naming things
 
 						by Sanne Peters
+
+						Notes:
+						Thank you for joining this presentation about Naming Things!
+
+						This is for both designers and developers
 						</section>
 				<section data-markdown>
 					Hi,
@@ -38,19 +43,21 @@
 					I am a __front-end architect__ at __BANKAI__
 				</section>
 				<section data-markdown>
-					In my work I deal with:
+					And I work on:
 	
 					- Design Systems
 					- Design Op(eration)s
 					- The semantic web
-					- Data visualisation
+					- Data visualisations
 	
-					which all involve **naming things**.
+					And in all these I have to **name things**.
 				</section>
 				<section data-markdown>
-					1. Why I care and you should too.
+					## Topics
+
+					1. Why I care and you should too
 					2. Some theory
-					3. Practical tips!
+					3. Theory put into practice!
 
 					Notes:
 					In this talk I want to discuss the following things...
@@ -63,10 +70,9 @@
 
 					Notes:
 					I bet most of us have heard of this saying. And I like it,
-					because points out how deceptively tricky this subject is.
+					because points out how __deceptively__ tricky this subject __actually__ is.
 
-					And since I have no clue how to invalidate cache,
-					I thought, let's pick the other hardest thing!
+					Also, I have no clue how to invalidate cache.
 				</section>
 				<section data-markdown>
 					# Why I care and you should too.
@@ -76,22 +82,19 @@
 					something that is implied or hinted at. but I also makes me acutely 
 					aware of these problems and that they might affect others too.
 
-					This is why in communication I appreciate clarity and 
-					honesty above all else, because that way I will always 
-					understand what the other means.
+					This is why in communication I appreciate clarity above all else,
+					because that way I will always understand what the other means.
+					And using the right name for something is just really important in this.
 
 					This is why I care so much about naming things. 
 
 					The reason you should is that using the right names 
-					for something makes communication clearer and easier to understand.
+					for something makes communication, __in general__ clearer and easier to understand. __Saving time__.
 					And that makes it accessible, for everyone, despite their 'disabilities'.
 					
 					So when you put just that little bit of extra effort into properly naming something, 
-					your not just showing you care about the quality of the code, 
+					your not just showing you care about the quality of the what your making, 
 					but that you also care the efficiency of everyone else in your team.
-				</section>
-				<section data-markdown>
-					# Theory
 				</section>
 				<section>
 					<h2>Why is naming things hard?</h2>
@@ -108,51 +111,60 @@
 					</p>
 
 					<p class="fragment">
-						so you need to <strong>think ahead</strong>. <br>
+						So you need to <strong>think ahead</strong>. <br>
 						And that is <strong>hard</strong>.
 					</p>
 
 					<aside class="notes">
 						<p>When we build things the focus is on getting things done.</P>
 
-						People are also lazy.
-						that way they will focus the most important things, 
-						<p>because they need be done.</P>
+							<p>People are also lazy.
+						that why they will focus the most important things to get it done.</P>
 
+						<p>
 						But thinking like that, means that things like
 						proper names and documentation tend to get a backseat.
-						<p>And frankly this is short term thinking.</P>
-
+						</p>
+						<p>And frankly this is short term thinking.
 						Because the names you come up with still need to make sense
-						5 months from now.
+						5 months from now.</p>
 						<p>So you need to think ahead. And that is hard. </P>
 
 						<p>The reason why this is hard,
-						is that the meaning of a name needs to be remain the same
-						even through time. And this is where the field of semantics can help.
+						is that the meaning of a name needs to be remain clear
+						even throughout time. And this is where the field of semantics can help.
 						<p>
 					</aside>
 				</section>
 				<section data-markdown>
-					### Semantics,
-					or the philosophy of meaning
-					
+					## Some theory: semantics
+					Or the philosophy of meaning.
+
 					Semantics talks about how things do not exist on their own, but always in a context.
+
+					__Contexts__ are like __domains__.
+
+					Each  __domain__ has its own __names__ for things.
+
+					Those are called a __shared language__.
 
 					Notes: 
 					Semantics talks about how things do not exist on their own, but always in a context.
 
-					This context is like a domain. Like a nation's culture, or a certain industry.
-					Each one of those domain have specific names for things that only have meaning within those domains.
-					Those 'sets' of names are also called a shared language.
+					__Contexts__ are like __domains__.
+					Like a nation's culture, or a certain industry.
 
-					The main benefit of a shared language is that you have a common understanding
-					of what you mean and the other receives.
+					Each  __domain__ has its own __names__ for things
+
+					Those are called a __shared language__
+					shared language is a common understanding
+					of what you mean and the other understands.
 					</section>
 				<section data-markdown>
-					### Shared language
+					## Shared language
 
 					Or in other words:
+
 					Names allow us to discuss a subject without it being present.
 
 					Notes:
@@ -164,7 +176,7 @@
 				on the team and maybe even in the organisation. This is what shared language is.
 				</section>
 				<section data-markdown>
-					### Shared language
+					## Shared language
 
 					This is also true when we are building systems.
 
@@ -177,13 +189,13 @@
 				</section>
 
 				<section>
-					<h2> Defining names</h2>
+					<h2> Examples</h2>
 
 					<p class="fragment">
-						Take for instance me. my name is Sanne, 
+						Take for instance me. My name is Sanne.
 					</p>
 					<p class="fragment">
-						which is a terrible way to identify or describe me. Better ones would be:
+						Better ones would be:
 					</p>
 					<p class="fragment">
 						software-architect-at-bankai (In a work context)
@@ -195,35 +207,41 @@
 
 
 				<section data-markdown>
-					## Defining names
+					## Examples
 
 					Variables
 
-					consider:
+					Consider:
 					```css
-					$primary-colour: #ff0000; /* this is red */
+					$red: #ff0000; /* this is red */
 					```
-					versus:
+					Versus:
 
 					```css
 					$cta-colour: #ff0000; /* this is also red */
 					```
 				</section>
 				<section data-markdown>
-					## Defining names
+					## Examples
 
-					For UI components
+					UI components
 
 					![Three USP examples](/images/three-usp-component-examples.svg)
 
+					- usp-block (NO)
+					- usp-summary (OK)
+
 					Notes:
 					- usp-block (NO)
-					- usp-summary (YES)
+					- usp-summary (MAYBE)
+					- designer says: also used for explaining service specs
+					- let me know what a good name for this could be
+					- BriefExplainerItem
 				</section>
 				<section data-markdown>
-					## Defining names
+					## Examples
 
-					For Functions
+					Functions
 
 					```js
 					function sortNames (names) {
@@ -246,7 +264,7 @@
 					```
 				</section>
 				<section data-markdown>
-					## Naming basics
+					## Naming in practice
 
 					- Avoid colloquialisms (Typically local ways of saying things)
 						- Not: "A dodgy way"
@@ -261,11 +279,11 @@
 					- Use simple words,
 				</section>
 				<section data-markdown>
-					## Naming basics
+					## Naming in practice
 
-					- Stay away from abbreviations.
-						- Not: "idx" and "EOB"
-						- But: "index" and "End of business day"
+					- Stay away from abbreviations, especially in business terms.
+						- Not: "CMT"
+						- But: "ContentManagementTool"
 					- Make a name longer vs shorter.
 
 					Notes:
@@ -276,14 +294,17 @@
 					Longer names, although verbose, tend to be more descriptive.
 				</section>
 				<section data-markdown>
-					## Naming things is a creative effort
+					## Naming in practice
+					Naming things is a creative effort:
 
-					- Reason from another person's perspective, not your own.
-					- Ask a co-worker or a friend. And brainstorm a little. Two minds are more than one.
+					- Reason from __another person's perspective__, not your own.
+					- __Ask a co-worker or a friend__. And brainstorm a little. Two minds are more than one.
 				</section>
 
 				<section data-markdown>
-					## Naming things is a creative effort
+					## Naming in practice
+					Naming things is a creative effort:
+
 					Iterate on a name.
 
 					Notes:
@@ -293,18 +314,28 @@
 				</section>
 
 				<section data-markdown>
-					## Naming things is a creative effort,
-					so find some inspiration.
+					## Naming in practice
 
-					- In a **thesaurus** (like [thesaurus.com/](https://www.thesaurus.com/))
+					Some final inspiration:
+
+					- In a **thesaurus** (like [thesaurus.com](https://www.thesaurus.com/))
 					- In the field of **semantics** (like [schema.org](http://schema.org))
+				</section>
+				<section>
+					<h2>But wait...</h2>
+
+					<p>What about that USP component?</p>
+
+					<img alt="Three USP examples" src="/images/three-usp-component-examples.svg"/>
+
+					<p class="fragment">How about: <strong>BriefExplainerItem</strong>?</p>
 				</section>
 				<section data-markdown>
 					Thanks for listening!
 
 					Ask me anything
 
-					On Twitter: [@sanstreamed](https://twitter.com/sanstreamed)
+					Find me on Twitter: [@sanstreamed](https://twitter.com/sanstreamed)
 				</section>
 			</div>
 		</div>
