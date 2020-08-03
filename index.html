@@ -26,40 +26,14 @@
 		<div class="reveal">
 			<div class="slides">
 				<section data-markdown>
-						# Building effective
+						# Building practical
 						# design systems
 
 						using Vue, React or whatever...
 					</section>
 				<section data-markdown>
-					Hi, my name is __Sanne Peters__
+					Design Systems ❤️
 
-					and I work at __BANKAI__
-
-					as a __Front-end Software Architect__
-				</section>
-				<section data-markdown>
-				We are a tiny Design Agency
-
-				that mostly works by __collaborating__
-
-				with others
-				</section>
-				<section data-markdown>
-					And we collaborate a lot
-
-					Notes:
-					- governments
-					- scientific institutes
-					- data-management
-					- hardware manufactures
-					</aside>
-				</section>
-				<section data-markdown>
-					And we love Design Systems ❤️
-
-					because they
-				
 					are __collaboration__ and __communication__ tools.
 
 					Notes:
@@ -107,13 +81,15 @@
 
 					Notes:
 					Solves designer vs developer problem.
+					This is the only way it will be become a single source of truth.
 				</section>
 				<section data-markdown>
-					### Establish a common language
+					### A common language
 					
-					In order to understand each other you need to speak the same language
+					Everyone uses __different terms__ for the __same things__. <!-- .element: class="fragment" -->
 					
-					Everyone uses different terms for the same things
+					In order to understand __each other__ you need to speak the __same language__. <!-- .element: class="fragment" -->
+					
 				</section>
 				<section
 					data-markdown
@@ -121,16 +97,21 @@
 				>
 					Notes:
 					what is this called?
+
+					Write it down on a piece of paper.
+
 					Usb-c one to many connector
 				</section>
 				<section data-markdown>
-					### Establish a common language
+					### A common language
 					__The whole team__ should use __the same terms__
 					
 					Notes: everyone comes in from different backgrounds and therefore has different perspectives
 					Cooperation is not a 1 way street, it needs to come from both directions
 				</section>
 				<section data-markdown>
+					### A common language
+				
 					Involve each other in the decision making:
 					- How do __we__ name this thing?
 					- Does its structure make sense?
@@ -138,35 +119,10 @@
 					- Do __we__ need this feature documented?
 				</section>
 				<section data-markdown>
-					### Sharing is caring
-
-					Notes: By sharing you learn about each other and each other skills
+					## Part 2: Structure
 				</section>
 				<section data-markdown>
-					Share what you know about the web. So Designers can make more informed decisions
-					- both on what's possible and what's not.
-					- propose to research something.
-					- Prototype something...
-					- talk about obscure/new web technologies
-
-					Notes:
-					webtech: like Variable Fonts or Web Audio API
-				</section>
-				<section data-markdown>
-					**Don't force people** to do
-					what they **do not want** too.
-
-					Be nice, be forgiving.
-
-					Notes:
-					Find the right way for collaboration for your team. 
-					Remember that this is always different for each member.
-				</section>
-				<section data-markdown>
-					## Part 2: Keep structure
-				</section>
-				<section data-markdown>
-					Allow yourself to think less and create room for some...
+					Allows us to think less and create room for some...
 				</section>
 				<section data-markdown data-background-image="/images/creativity-duck-bananas.jpg">
 					### ✨ creativity ✨
@@ -177,27 +133,27 @@
 				<section data-markdown>
 					## The most basic values
 
-					We use __Design Tokens__
-					to define the most __basic values__
-					
-					Design Tokens were defined by SalesForce as part of their
-					lightning design system
+					We use __Foundation Tokens__
+					to define the most __basic values__ of the design's inherit logic.
+
+					- Colours, and how they are, used.
+					- Typography, headings labels, etc.
+					- Sizings, spaces between and sizes of components
 				</section>
 				<section data-markdown>
-					## Organise components in a hierarchy.
+					## Organising components in a hierarchy.
 
-					- A hierarchy creates structure 
+					- A hierarchy creates structure
 					- Adds context to each component.
 					
 					Notes:
 					needs rules,
 					without rules there is chaos.
 					[funny background pic]
-					(atomic design is next)
 				</section>
 				<section>
-					<h2>Atomic Design</h2>
-					<p>by Brad Frost</p>
+					<h2>hierarchy</h2>
+					<p>(An example)</p>
 					<ul>
 						<li>
 							App <span class="fragment" data-fragment-index="6">
@@ -220,7 +176,7 @@
 							>🧩 Design System</span>
 						</li>
 						<li>
-							Organisms
+							Patterns
 							<span class="fragment" data-fragment-index="3">
 								(<strong>Houses</strong>)
 							</span>
@@ -229,16 +185,7 @@
 							>🧩 Design System</span>
 						</li>
 						<li>
-							Molecules
-							<span class="fragment" data-fragment-index="2">
-								(<strong>Walls</strong>)
-							</span>
-							<span
-								class="fragment" data-fragment-index="10"
-							>🧩 Design System</span>
-						</li>
-						<li>
-							Atoms
+							Elements
 							<span class="fragment" data-fragment-index="1">
 								(<strong>Bricks</strong>)
 							</span>
@@ -247,7 +194,7 @@
 							>🧩 Design System</span>
 						</li>
 						<li class="fragment" data-fragment-index="7">
-							<i>Design Tokens</i>
+							<i>Foundation Tokens</i>
 							<span
 								class="fragment" data-fragment-index="10"
 							>🧩 Design System</span>
@@ -264,7 +211,8 @@
 					### Composing components, not building them
 
 					Notes:
-					You are not a mindless machine.
+					I call it composing component, because its a process.
+					We are not a mindless machines.
 					Or at least,
 					you shouldn't be.
 					Thinking is like, good.
@@ -282,8 +230,8 @@
 					### Composing components is done through __collaboration__
 
 					- Discuss the design with the person who made it.
-					- Does it contain all the info you need?
-					- Ask question on how it should work?
+					- Does it contain all the info we need?
+					- We ask critical questions on how it should work.
 					- Are animations and transitions defined. If not, should they?
 
 					Notes:
@@ -302,9 +250,8 @@
 						- Iterate on the name, just modify it as you compose it.
 						- Ask a co-worker!
 
-						style: [Vue.js](https://vuejs.org/v2/style-guide/) & [W3C](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name)
-
-						Notes: - Accordeon --> expandable-list-layout
+						Notes:
+						- Accordeon --> expandable-list-layout
 						- Toast --> popup-notification
 				</section>
 				<section data-markdown>
@@ -314,20 +261,22 @@
 						This part is all about quality, what methods should you use?
 				</section>
 				<section data-markdown>
-						### Each thing should be documented
+						### Each thing is documented
 						
 						The bigger a team gets the harder it is to communicate.
 						Document once and you will never need to explain it again.
 
-						Documentation tools: styleguidist ([React](https://react-styleguidist.js.org/) or [Vue](https://vue-styleguidist.github.io/)) and [storybook](https://storybook.js.org/)
+						Documentation tools:
+
+						- __StyleGuidist__ ([React](https://react-styleguidist.js.org/) or [Vue](https://vue-styleguidist.github.io/)) ❤️
+						- [StoryBook](https://storybook.js.org/) works for Vue, React, Svelte and others.
 
 						[An example](http://localhost:6060/#/Organisms/DetailedInfoHeader).
-						
+
 						Notes:
-						- design tokens
+						- Foundation Tokens
 						- components
 						- utilities
-						
 				</section>
 				<section data-markdown>
 						### Each functionality needs to have tests
@@ -342,11 +291,11 @@
 					Use methods that are well thought out and established,
 					like:
 					
-					- Structured version control
-					- Linting
+					- Structured version control (GIT)
+					- Linting (predefined rules)
 					- __Code reviews__ through __Pull/Merge Request__
-					- Integration testing
-					- Automate this too!
+					- Integration and end-to-end testing
+					- Automate this all!
 					
 					Notes:
 					- for structured version control: [__git flow__](https://nvie.com/posts/a-successful-git-branching-model/) or [__github flow__](https://guides.github.com/introduction/flow/)
@@ -374,8 +323,6 @@
 					<section data-markdown>
 						Ask me anything
 						(about Design Systems)
-
-						@sanstreamed (Twitter)
 					</section>
 			</div>
 		</div>
