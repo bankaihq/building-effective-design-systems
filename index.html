@@ -66,12 +66,12 @@
 					Key parts:
 					1. Work __together__
 					2. Keep __structure__
-					3. Grow __safely__
+					3. Scale __safely__
 
 					Notes:
 					1. Work __together__; through __co-ownership__
 					2. Keep structure; making it __accessible__ and __maintainable__
-					3. grow __safely__.
+					3. Scale __safely__.
 				</section>
 				<section data-markdown>
 					## Part 1: Work together
@@ -128,20 +128,17 @@
 					### ✨ creativity ✨
 				</section>
 				<section data-markdown>
-					### Define a structure for the system
-				</section>
-				<section data-markdown>
-					## The most basic values
+					## Structure: the most basic values
 
 					We use __Foundation Tokens__
-					to define the most __basic values__ of the design's inherit logic.
+					to define the most __basic values__ of the design's __inherit__ logic.
 
-					- Colours, and how they are, used.
-					- Typography, headings labels, etc.
-					- Sizings, spaces between and sizes of components
+					- __Colours__, and how they are, used.
+					- __Typography__, headings labels, etc.
+					- __Sizings__, spaces between, and sizes of components
 				</section>
 				<section data-markdown>
-					## Organising components in a hierarchy.
+					## Structure: organising components
 
 					- A hierarchy creates structure
 					- Adds context to each component.
@@ -152,7 +149,7 @@
 					[funny background pic]
 				</section>
 				<section>
-					<h2>hierarchy</h2>
+					<h2>Structure: hierarchy</h2>
 					<p>(An example)</p>
 					<ul>
 						<li>
@@ -241,27 +238,30 @@
 					# name your component
 				</section>
 				<section data-markdown="">
-						"But naming things is hard 😨."
+					## name your component
+					"But naming things is hard 😨."
 				</section>
 				<section data-markdown>
-						Some tricks:
-						- Define the name rather by __what they do__ than by __how they look__
-						- Use simple, every day words. (remember you work in a multi-disciplinary team)
-						- Iterate on the name, just modify it as you compose it.
-						- Ask a co-worker!
+					## name your component
+				
+					Some tricks:
+					- Define the name rather by __what they do__ than by __how they look__
+					- Use simple, every day words. (remember you work in a multi-disciplinary team)
+					- Iterate on the name, just modify it as you compose it.
+					- Ask a co-worker!
 
-						Notes:
-						- Accordeon --> expandable-list-layout
-						- Toast --> popup-notification
+					Notes:
+					- Accordeon --> expandable-list-layout
+					- Toast --> popup-notification
 				</section>
 				<section data-markdown>
-						## Part 3: Grow __safely__
+						## Part 3: Scale __safely__
 
 						Notes:
 						This part is all about quality, what methods should you use?
 				</section>
 				<section data-markdown>
-						### Each thing is documented
+						### Scale safely: Each thing is documented
 						
 						The bigger a team gets the harder it is to communicate.
 						Document once and you will never need to explain it again.
@@ -290,22 +290,21 @@
 
 					Use methods that are well thought out and established,
 					like:
-					
-					- Structured version control (GIT)
-					- Linting (predefined rules)
+
+					- Structured version control (GIT + [__git flow__](https://nvie.com/posts/a-successful-git-branching-model/))
+					- Linting (predefined rules, like, eslint standard or AirBNB)
 					- __Code reviews__ through __Pull/Merge Request__
-					- Integration and end-to-end testing
-					- Automate this all!
-					
+					- Integration and end-to-end testing (We use Cypress, for everything)
+					- All automated through:
+						- Continuous Integration / Continuous Deployment (CI/CD)
+						- git hooks
+
 					Notes:
 					- for structured version control: [__git flow__](https://nvie.com/posts/a-successful-git-branching-model/) or [__github flow__](https://guides.github.com/introduction/flow/)
 					- add linting (like, eslint standard or AirBNB). Stop wasting time having tabs-vs-spaces discussions or wether or not something needs an extra comma behind it.
 					- do __code reviews__ through __Pull/Merge Request__
 					- set up integration testing and end-to-end testing
-					- automate the hell out of it! 
-
-					Make it your mantra.
-					(maybe later, tweak it to fit your needs.)
+					- automate the hell out of it!
 				</section>
 				<section data-markdown>
 						### So summarised:
