@@ -138,6 +138,33 @@
 					- __Sizings__, spaces between, and sizes of components
 				</section>
 				<section data-markdown>
+					Pallette colours:
+					```scss
+					$colour-primary: #E64D1F; // soft-red
+					$colour-primary-high-contrast: #A41111; // dark-red
+
+					$colour-secondary: #036F7B; // grey-blue
+					$colour-secondary-high-contrast: #174A5B; // dark-grey-blue
+					```
+
+					Pallette colours applied to base values:
+					```scss
+					// For headings and labels:
+					$colour-main-item: $colour-primary;
+					$colour-main-item-border: $colour-primary-high-contrast;
+
+					// For Call to Action items, like buttons.
+					$colour-cta: $colour-primary;
+					$colour-cta-border: $colour-primary-high-contrast;
+
+					// For active elements, like buttons, but that need to
+					// draw less attention, like table options.
+					$colour-support: $colour-secondary;
+					$colour-support-border: $colour-secondary-high-contrast;
+					```
+
+				</section>
+				<section data-markdown>
 					## Structure: organising components
 
 					- A hierarchy creates structure
@@ -199,10 +226,13 @@
 					</ul>
 
 					<aside class="notes">
-						Notes: I've seen many people change them so lots of reasons.
-						Don't. That way you're effectively creating a new way of working.
-						If you keep it as it is it is easier to explain it.
+						Notes: We used to use Atomic Design, but this brought unneeded complexity.
 					</aside>
+				</section>
+				<section data-markdown>
+					### Structure: hierarchy
+
+					An example using EldoLed.
 				</section>
 				<section data-markdown>
 					### Composing components, not building them
@@ -294,10 +324,8 @@
 					- Structured version control (GIT + [__git flow__](https://nvie.com/posts/a-successful-git-branching-model/))
 					- Linting (predefined rules, like, eslint standard or AirBNB)
 					- __Code reviews__ through __Pull/Merge Request__
-					- Integration and end-to-end testing (We use Cypress, for everything)
-					- All automated through:
-						- Continuous Integration / Continuous Deployment (CI/CD)
-						- git hooks
+					- Integration and end-to-end testing (We use cypress, for everything)
+					- All automated through CI/CD and git hooks
 
 					Notes:
 					- for structured version control: [__git flow__](https://nvie.com/posts/a-successful-git-branching-model/) or [__github flow__](https://guides.github.com/introduction/flow/)
@@ -307,21 +335,14 @@
 					- automate the hell out of it!
 				</section>
 				<section data-markdown>
-						### So summarised:
-
-						- Communicate, start talking in easy terms and be nice to people.
-						- Don't re-invent the wheel
-				</section>
-				<section data-markdown>
 						# A few final words
+
+						Ask me anything
+						(about Design Systems)
 
 						Notes:
 						Designs Systems exist to make life easier by making communication easier.
 						Leave/create room for creativity
-					</section>
-					<section data-markdown>
-						Ask me anything
-						(about Design Systems)
 					</section>
 			</div>
 		</div>
