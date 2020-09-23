@@ -26,14 +26,343 @@
 		<div class="reveal">
 			<div class="slides">
 				<section data-markdown>
-						# [The presentations' title]
-						</section>
+						# Building effective
+						# design systems
+
+						using Vue, React or whatever...
+					</section>
 				<section data-markdown>
-					Hi,
+					Hi, my name is __Sanne Peters__
 
-					my name is __[your name]__
+					and I work at __BANKAI__
 
-					I am a __[job title]__ at __BANKAI__
+					as a __Front-end Software Architect__
+				</section>
+				<section data-markdown>
+				We are a tiny Design Agency
+
+				that mostly works by __collaborating__
+
+				with others
+				</section>
+				<section data-markdown>
+					And we collaborate a lot
+
+					Notes:
+					- governments
+					- scientific institutes
+					- data-management
+					- hardware manufactures
+					</aside>
+				</section>
+				<section data-markdown>
+					And we love Design Systems ❤️
+
+					because they
+				
+					are __collaboration__ and __communication__ tools.
+
+					Notes:
+					In order to understands why this is important
+					we need to know the users
+				</section>
+				<section data-markdown>
+					## Who uses Design Systems?
+					- Designers
+					- Developers
+					- Product Owners
+					- Copy Writers
+					- Data Scientists
+					- Marketeers
+
+					Notes:
+					- Designers (documenting design choices, toolbox) 
+					- Developers (toolbox, ref. for how to use thing)
+					- Product Owners (Getting a sense of how time is invested)
+					- Copy Writers (providing context for UI texts)
+					- Data Scientists (how to map data into components)
+					- Marketeers (docs about brand identity)
+
+					Single Source of thruth for an organisation.
+					onboarding new people
+				</section>
+				<section data-markdown>
+					## How to build something that can be used by everyone?
+
+					Key parts:
+					1. Work __together__
+					2. Keep __structure__
+					3. Grow __safely__
+
+					Notes:
+					1. Work __together__; through __co-ownership__
+					2. Keep structure; making it __accessible__ and __maintainable__
+					3. grow __safely__.
+				</section>
+				<section data-markdown>
+					## Part 1: Work together
+
+					In order for it to be effective the system needs to be 
+					owned __together__. The best way to achieve this is to work on it __together__.
+
+					Notes:
+					Solves designer vs developer problem.
+				</section>
+				<section data-markdown>
+					### Establish a common language
+					
+					In order to understand each other you need to speak the same language
+					
+					Everyone uses different terms for the same things
+				</section>
+				<section
+					data-markdown
+					data-background-image="/images/mysterious-apple-peripheral.jpeg"
+				>
+					Notes:
+					what is this called?
+					Usb-c one to many connector
+				</section>
+				<section data-markdown>
+					### Establish a common language
+					__The whole team__ should use __the same terms__
+					
+					Notes: everyone comes in from different backgrounds and therefore has different perspectives
+					Cooperation is not a 1 way street, it needs to come from both directions
+				</section>
+				<section data-markdown>
+					Involve each other in the decision making:
+					- How do __we__ name this thing?
+					- Does its structure make sense?
+					- How should it work?
+					- Do __we__ need this feature documented?
+				</section>
+				<section data-markdown>
+					### Sharing is caring
+
+					Notes: By sharing you learn about each other and each other skills
+				</section>
+				<section data-markdown>
+					Share what you know about the web. So Designers can make more informed decisions
+					- both on what's possible and what's not.
+					- propose to research something.
+					- Prototype something...
+					- talk about obscure/new web technologies
+
+					Notes:
+					webtech: like Variable Fonts or Web Audio API
+				</section>
+				<section data-markdown>
+					**Don't force people** to do
+					what they **do not want** too.
+
+					Be nice, be forgiving.
+
+					Notes:
+					Find the right way for collaboration for your team. 
+					Remember that this is always different for each member.
+				</section>
+				<section data-markdown>
+					## Part 2: Keep structure
+				</section>
+				<section data-markdown>
+					Allow yourself to think less and create room for some...
+				</section>
+				<section data-markdown data-background-image="/images/creativity-duck-bananas.jpg">
+					### ✨ creativity ✨
+				</section>
+				<section data-markdown>
+					### Define a structure for the system
+				</section>
+				<section data-markdown>
+					## The most basic values
+
+					We use __Design Tokens__
+					to define the most __basic values__
+					
+					Design Tokens were defined by SalesForce as part of their
+					lightning design system
+				</section>
+				<section data-markdown>
+					## Organise components in a hierarchy.
+
+					- A hierarchy creates structure 
+					- Adds context to each component.
+					
+					Notes:
+					needs rules,
+					without rules there is chaos.
+					[funny background pic]
+					(atomic design is next)
+				</section>
+				<section>
+					<h2>Atomic Design</h2>
+					<p>by Brad Frost</p>
+					<ul>
+						<li>
+							App <span class="fragment" data-fragment-index="6">
+								(<strong>Village</strong>)
+							</span>
+						</li>
+						<li>
+							Views / pages
+							<span class="fragment" data-fragment-index="5">
+								(<strong>Neighbourhoods</strong>)
+							</span>
+						</li>
+						<li>
+							Layouts
+							<span class="fragment" data-fragment-index="4">
+								(<strong>Street-plans</strong>)
+							</span>
+							<span
+								class="fragment" data-fragment-index="10"
+							>🧩 Design System</span>
+						</li>
+						<li>
+							Organisms
+							<span class="fragment" data-fragment-index="3">
+								(<strong>Houses</strong>)
+							</span>
+							<span
+								class="fragment" data-fragment-index="10"
+							>🧩 Design System</span>
+						</li>
+						<li>
+							Molecules
+							<span class="fragment" data-fragment-index="2">
+								(<strong>Walls</strong>)
+							</span>
+							<span
+								class="fragment" data-fragment-index="10"
+							>🧩 Design System</span>
+						</li>
+						<li>
+							Atoms
+							<span class="fragment" data-fragment-index="1">
+								(<strong>Bricks</strong>)
+							</span>
+							<span
+								class="fragment" data-fragment-index="10"
+							>🧩 Design System</span>
+						</li>
+						<li class="fragment" data-fragment-index="7">
+							<i>Design Tokens</i>
+							<span
+								class="fragment" data-fragment-index="10"
+							>🧩 Design System</span>
+						</li>
+					</ul>
+
+					<aside class="notes">
+						Notes: I've seen many people change them so lots of reasons.
+						Don't. That way you're effectively creating a new way of working.
+						If you keep it as it is it is easier to explain it.
+					</aside>
+				</section>
+				<section data-markdown>
+					### Composing components, not building them
+
+					Notes:
+					You are not a mindless machine.
+					Or at least,
+					you shouldn't be.
+					Thinking is like, good.
+				</section>
+				<section data-markdown>
+					### Making components is a __creative process__.
+
+					Yes, you're an artist now. <!-- .element: class="fragment" -->
+
+					Notes:
+					> So next time when your parents ask you "so, what do you do again?"
+					> You say, "I am an artist, a digital artist"
+				</section>
+				<section data-markdown>
+					### Composing components is done through __collaboration__
+
+					- Discuss the design with the person who made it.
+					- Does it contain all the info you need?
+					- Ask question on how it should work?
+					- Are animations and transitions defined. If not, should they?
+
+					Notes:
+					Have a discussion about, using clear arguments and explain them.
+				</section>
+				<section data-markdown data-background-image="/images/lion-king-rafiki-naming-simba.jpg">
+					# name your component
+				</section>
+				<section data-markdown="">
+						"But naming things is hard 😨."
+				</section>
+				<section data-markdown>
+						Some tricks:
+						- Define the name rather by __what they do__ than by __how they look__
+						- Use simple, every day words. (remember you work in a multi-disciplinary team)
+						- Iterate on the name, just modify it as you compose it.
+						- Ask a co-worker!
+
+						style: [Vue.js](https://vuejs.org/v2/style-guide/) & [W3C](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name)
+
+						Notes: - Accordeon --> expandable-list-layout
+						- Toast --> popup-notification
+				</section>
+				<section data-markdown>
+						## Part 3: Grow __safely__
+
+						Notes:
+						This part is all about quality, what methods should you use?
+				</section>
+				<section data-markdown>
+						### Each thing should be documented
+						
+						The bigger a team gets the harder it is to communicate.
+						Document once and you will never need to explain it again.
+
+						Documentation tools: styleguidist ([React](https://react-styleguidist.js.org/) or [Vue](https://vue-styleguidist.github.io/)) and [storybook](https://storybook.js.org/)
+
+						[An example](http://localhost:6060/#/Organisms/DetailedInfoHeader).
+						
+						Notes:
+						- design tokens
+						- components
+						- utilities
+						
+				</section>
+				<section data-markdown>
+						### Each functionality needs to have tests
+
+						- Start with manual testing scripts
+						- Translate those to code-based test
+						- Automate your tests
+				</section>
+				<section data-markdown>
+					### Don't re-invent the wheel.
+
+					Use methods that are well thought out and established,
+					like:
+					
+					- Structured version control
+					- Linting
+					- __Code reviews__ through __Pull/Merge Request__
+					- Integration testing
+					- Automate this too!
+					
+					Notes:
+					- for structured version control: [__git flow__](https://nvie.com/posts/a-successful-git-branching-model/) or [__github flow__](https://guides.github.com/introduction/flow/)
+					- add linting (like, eslint standard or AirBNB). Stop wasting time having tabs-vs-spaces discussions or wether or not something needs an extra comma behind it.
+					- do __code reviews__ through __Pull/Merge Request__
+					- set up integration testing and end-to-end testing
+					- automate the hell out of it! 
+
+					Make it your mantra.
+					(maybe later, tweak it to fit your needs.)
+				</section>
+				<section data-markdown>
+						### So summarised:
+
+						- Communicate, start talking in easy terms and be nice to people.
+						- Don't re-invent the wheel
 				</section>
 				<section data-markdown>
 						# A few final words
